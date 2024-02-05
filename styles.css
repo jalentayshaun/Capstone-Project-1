@@ -10,7 +10,7 @@ section {
 }
 
 div {
-    border: 2px solid rgb(0, 170, 255);
+    border: 1px solid rgb(0, 170, 255);
 }
 
 /* Header */
@@ -20,16 +20,19 @@ div {
     grid-template-rows: auto auto;
     position: relative;
     /* background-color: blueviolet; */
+    
 }
 
 .image-div {
-    /* position: relative; */
+    display: flex;
     grid-row: span 2;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-div img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
     margin: 0;
 }
@@ -39,6 +42,7 @@ div {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 5%;
 }
 
 .title h1 {
@@ -55,6 +59,7 @@ div {
 #contact-bar > div {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 10%;
 }
 
 /* Content */
@@ -63,7 +68,7 @@ div {
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* grid-template-rows: 50rem 10rem 20rem; */
-    grid-template-rows: 30rem 15rem 20rem;
+    grid-template-rows: auto 15rem 20rem;
 }
 
 #content section {
@@ -77,6 +82,16 @@ div {
 
 /* Experience */
 #experience {
+}
+
+.job-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto;
+}
+
+.job-description .responsibilities {
+    grid-column: span 2;
 }
 
 /* Education */
