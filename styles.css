@@ -5,8 +5,8 @@
 
 section {
     border: 2px solid orange;
-    min-height: 10rem;
-    margin: 5px;
+    min-height: 7.5rem;
+    margin: 0;
 }
 
 div {
@@ -15,27 +15,47 @@ div {
 
 /* Header */
 #header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 7.5rem;
+    position: relative;
+    /* background-color: blueviolet; */
 }
 
-#header > div {
-    height: 8rem;
-    width: 8rem;
+.image-div {
+    position: relative;
 }
 
 .image-div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title h1 {
+    margin: 0;
 }
 
 /* Contact Bar */
 #contact-bar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.contact {
-    height: 3rem;
+#contact-bar > div {
+    display: flex;
+    align-items: flex-end;
+}
+
+#contact-bar .empty {
+    grid-row: span 2;
 }
 
 /* Content */
@@ -45,6 +65,10 @@ div {
     grid-template-columns: 1fr 2fr;
     /* grid-template-rows: 50rem 10rem 20rem; */
     grid-template-rows: 30rem 15rem 20rem;
+}
+
+#content section {
+    /* margin: 0; */
 }
 
 /* Side Bar */
