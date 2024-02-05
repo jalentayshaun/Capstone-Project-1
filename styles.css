@@ -17,18 +17,21 @@ div {
 #header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 7.5rem;
+    grid-template-rows: auto auto;
     position: relative;
     /* background-color: blueviolet; */
 }
 
 .image-div {
-    position: relative;
+    /* position: relative; */
+    grid-row: span 2;
 }
 
 .image-div img {
-    height: 15rem;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
+    margin: 0;
 }
 
 .title {
@@ -45,17 +48,13 @@ div {
 /* Contact Bar */
 #contact-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 #contact-bar > div {
     display: flex;
     align-items: flex-end;
-}
-
-#contact-bar .empty {
-    grid-row: span 2;
 }
 
 /* Content */
