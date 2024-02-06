@@ -1,6 +1,6 @@
 body {
     margin: 10px;
-    background-image: url(./assets/images/rainbow.png);
+    background-image: url(./assets/images//rainbow.png);
     background-position: center;
     background-size: cover;
     font-size: larger;
@@ -20,7 +20,6 @@ div {
 }
 
 h1, h2 {
-    font-family: 'Playfair Display', serif;
     font-weight: bolder;
 }
 
@@ -60,10 +59,15 @@ ul > li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    font-size: xx-large;
 }
 
 .title h1 {
-    margin: 0;
+    margin: 0px;
+}
+
+.title p {
+    margin-top: 10px;
 }
 
 /* Contact Bar */
@@ -76,6 +80,7 @@ ul > li {
 #contact-bar > div {
     display: flex;
     align-items: flex-end;
+    padding-top: 10px;
 }
 
 .contact > img {
@@ -99,19 +104,10 @@ ul > li {
     padding-top: 0px;
 }
 
-/* Side Bar */
-#side-bar {
-    grid-row: span 1;
-}
-
 /* Experience */
-#experience {
-    /* padding: 0px; */
-}
-
 .job-description {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
     margin-bottom: 10px;
     padding: 5px;
@@ -128,11 +124,11 @@ ul > li {
 }
 
 .position {
-    /* font-style: italic; */
+    font-style: italic;
 }
 
 .responsibilities {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .hollister {
@@ -144,15 +140,14 @@ ul > li {
     grid-column: span 2;
 }
 
-/* Footer */
-#footer {
-
-}
-
 /* Laptops */
 @media (max-width: 960px) {
     body {
         font-size: large;
+    }
+
+    .title {
+        font-size: x-large;
     }
 }
 
@@ -162,8 +157,17 @@ ul > li {
         font-size: medium;
     }
 
+    .title {
+        font-size: larger;
+    }
+
     #content {
         gap: 5px;
+    }
+
+    .contact > img {
+        height: 1rem;
+        padding-right: 10px;
     }
 }
 
@@ -171,5 +175,14 @@ ul > li {
 @media (max-width: 540px) {
     body {
         font-size: small;
+    }
+
+    .title {
+        font-size: medium;
+    }
+
+    .contact > img {
+        height: 0.8rem;
+        padding-right: 8px;
     }
 }
