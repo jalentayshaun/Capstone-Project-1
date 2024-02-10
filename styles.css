@@ -68,6 +68,7 @@ ul > li {
 
 .title p {
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /* Contact Bar */
@@ -86,6 +87,15 @@ ul > li {
 .contact > img {
     height: 1.5rem;
     padding-right: 15px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: rgba(149, 0, 255, 0.789);
 }
 
 /* Content */
