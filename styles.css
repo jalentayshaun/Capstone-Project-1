@@ -186,3 +186,30 @@ ul > li {
         padding-right: 8px;
     }
 }
+
+@media (max-width: 440px) {
+    body {
+        font-size: x-small;
+    }
+
+    .title {
+        font-size: small;
+    }
+
+    .contact > img {
+        height: 0.8rem;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .title {
+        font-size: smaller;
+    }
+
+    .contact > img {
+        height: 0.6rem;
+        padding-right: 6px;
+    }
+}
