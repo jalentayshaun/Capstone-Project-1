@@ -145,6 +145,11 @@ ul > li {
     margin-bottom: 0px;
 }
 
+/* Relevant Coursework */
+#coursework {
+    grid-column: span 2;
+}
+
 /* Projects */
 #projects {
     grid-column: span 2;
